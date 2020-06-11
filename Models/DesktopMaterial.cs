@@ -7,5 +7,8 @@ namespace MegaDesk.Models
 {
     public class DesktopMaterial
     {
+        public int DesktopMaterialId { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
     }
 }
