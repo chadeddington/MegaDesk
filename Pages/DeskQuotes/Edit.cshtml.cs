@@ -59,6 +59,7 @@ namespace MegaDesk.Pages.DeskQuotes
             DeskQuote.QuoteDate = DateTime.Now;
 
             _context.Attach(DeskQuote).State = EntityState.Modified;
+            _context.Attach(DeskQuote.Desk).State = EntityState.Modified;
 
             try
             {
